@@ -1,4 +1,4 @@
-package edu.galileo.android.androidchat;
+package edu.galileo.android.androidchat.domain;
 
 import com.firebase.client.AuthData;
 import com.firebase.client.DataSnapshot;
@@ -70,7 +70,7 @@ public class FirebaseHelper {
 
     public Firebase getOneContactReference(String mainEmail, String childEmail) {
         String childKey = childEmail.replace(".","_");
-        return  getUserReference(mainEmail)-child(CONTACTS_PATH).child(childKey);
+        return  getUserReference(mainEmail).child(CONTACTS_PATH).child(childKey);
     }
 
     public Firebase getChatsReference(String receiver){
