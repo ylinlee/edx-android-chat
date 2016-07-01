@@ -58,7 +58,7 @@ public class LoginActivity extends AppCompatActivity implements LoginView {
     }
 
     @Override
-    public void dsiableInputs() {
+    public void disableInputs() {
         setInputs(false);
     }
 

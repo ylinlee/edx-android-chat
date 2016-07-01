@@ -5,7 +5,7 @@ package edu.galileo.android.androidchat.login;
  */
 public interface LoginView {
     void enableInputs();
-    void dsiableInputs();
+    void disableInputs();
     void showProgress();
     void hideProgress();
 
