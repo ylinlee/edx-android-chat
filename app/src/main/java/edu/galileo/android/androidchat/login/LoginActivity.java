@@ -41,15 +41,8 @@ public class LoginActivity extends AppCompatActivity implements LoginView {
         setContentView(R.layout.activity_login);
         ButterKnife.bind(this);
 
-    }
-
-    @OnClick(R.id.btnSignin)
-    public void handlerSignin() {
-        Log.e("AndroidChat", inputEmail.getText().toString());
-    }
-
-    @OnClick(R.id.btnSignup)
-    public void handlerSignup() {
+        loginPresenter = new LoginPresenterImpl(this);
+        loginPresenter.checkForAuthenticatedUser();
     }
 
     @Override
@@ -78,6 +71,7 @@ public class LoginActivity extends AppCompatActivity implements LoginView {
         loginPresenter.registerNewUser(inputEmail.getText().toString(), inputPassword.getText().toString());
     }
 
+    @OnClick(R.id.btnSignin)
     @Override
     public void handleSignIn() {
         loginPresenter.validateLogin(inputEmail.getText().toString(), inputPassword.getText().toString());
