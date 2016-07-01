@@ -10,7 +10,7 @@ public class GreenRobotEventBus implements EventBus {
         private static final GreenRobotEventBus INSTANCE = new GreenRobotEventBus();
     }
 
-    private static GreenRobotEventBus getInstance() {
+    public static GreenRobotEventBus getInstance() {
         return SinglenHolder.INSTANCE;
     }
 
@@ -22,7 +22,7 @@ public class GreenRobotEventBus implements EventBus {
         eventBus.register(subscriber);
     }
 
-    @Override 
+    @Override
     public void unregister(Object subscriber) {
         eventBus.unregister(subscriber);
     }
