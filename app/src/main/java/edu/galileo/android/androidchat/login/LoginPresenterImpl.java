@@ -2,6 +2,8 @@ package edu.galileo.android.androidchat.login;
 
 import android.util.Log;
 
+import org.greenrobot.eventbus.Subscribe;
+
 import edu.galileo.android.androidchat.lib.EventBus;
 import edu.galileo.android.androidchat.lib.GreenRobotEventBus;
 import edu.galileo.android.androidchat.login.events.LoginEvent;
@@ -62,6 +64,7 @@ public class LoginPresenterImpl implements LoginPresenter {
     }
 
     @Override
+    @Subscribe
     public void onEventMainThread(LoginEvent event) {
         switch (event.getEventType()){
             case LoginEvent.onSignInSuccess:
