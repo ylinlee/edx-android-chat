@@ -4,7 +4,10 @@
     <string name="login.message.password">Password</string>
     <string name="login.button.signin">Inicio de sesión</string>
     <string name="login.button.signup">Crear cuenta</string>
-    <string name="login.error.message.signin">Imposible iniciar sesión %</string>
-    <string name="login.error.message.signup">Imposible registrar nuevo usuario %</string>
-    <string name="login.notice.message.signup">Usuario agregado exitosamente %</string>
+    <string name="login.error.message.signin">Imposible iniciar sesión %s</string>
+    <string name="login.error.message.signup">Imposible registrar nuevo usuario %s</string>
+    <string name="login.notice.message.signup">Usuario agregado exitosamente</string>
+
+    <string name="contactlist.menu.action.signoff">Cerrar sesión</string>
+    <string name="contactlist.title">Contactos</string>
 </resources>

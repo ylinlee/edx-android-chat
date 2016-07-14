@@ -3,9 +3,7 @@ package edu.galileo.android.androidchat.login;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.Snackbar;
-import android.support.v4.widget.ContentLoadingProgressBar;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -16,7 +14,7 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import edu.galileo.android.androidchat.R;
-import edu.galileo.android.androidchat.contactlist.ContatListActivity;
+import edu.galileo.android.androidchat.contactlist.ContactListActivity;
 
 public class LoginActivity extends AppCompatActivity implements LoginView {
 
@@ -86,7 +84,7 @@ public class LoginActivity extends AppCompatActivity implements LoginView {
 
     @Override
     public void navigateToMainScreen() {
-        startActivity(new Intent(this, ContatListActivity.class));
+        startActivity(new Intent(this, ContactListActivity.class));
     }
 
     @Override
